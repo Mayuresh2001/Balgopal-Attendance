@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 // import '../'; // Optional: Add CSS styles here or create a separate file
 
 function Login({isLoggedIn, setisLoggedIn}) {

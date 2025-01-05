@@ -1,6 +1,49 @@
 .App {
   text-align: center;
 }
+/* ***************Navbar Styles***************** */
+
+.navbar ul { 
+  margin: 0 auto ; 
+  list-style: none; 
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+.navbar li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 10px 0;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 0px 20px 10px;
+  position: relative;
+}
+.navbar a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 30px;
+	}
+}
 
 .text-white{
   color:white;
@@ -49,10 +92,12 @@ input {
 background-color: #f9f9f9;
 color: black;
 border: 1px solid #000;
-padding: 2px 5px;
+font-size: 15px;
+border-radius: 2px;
+padding: 2px 10px;
 }
 
-/* ******************************** */
+/* *****************Registration Form Styles*************** */
 
 
 h1 {

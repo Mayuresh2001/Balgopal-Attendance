@@ -3,13 +3,17 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div style={{ backgroundColor: "midnightblue" , height:"50px" }}>
+    <div className="navbar" style={{ backgroundColor: "midnightblue", height: "50px" }}>
       <div className="text-white">
-      <div style={{display:"flex",  flexDirection: "row", gap:"12px"}}>
-          <Link className="text-white" to={"/"}>Home</Link>
-           <Link className="text-white" to={"/Login"}>Login</Link>
-        </div> 
-        
+        <ul style={{ display: "flex", flexDirection: "row", gap: "12px" }}>
+          <li>
+            <Link className="text-white" to={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link className="text-white" to={"/Login"}>Login</Link>
+          </li>
+        </ul>
+
       </div>
     </div>
   );
